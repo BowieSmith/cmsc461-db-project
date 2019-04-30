@@ -14,7 +14,10 @@ if db is not None:
         # Open the CSV file and read it
         csv_file = open(path+filename+'.csv', 'r')
         csv_reader = csv.reader(csv_file, delimiter=',')
-    
+
+        # Skip first line
+        next(csv_reader)
+        
         # Insert data from CSV into appropriate table
         for item in csv_reader:
             # Basic SQL statement to insert data into the tables
