@@ -17,10 +17,10 @@ try:
 		if myStmt != "quit":
 			cur.execute(myStmt)
 			data = cur.fetchall()
-		print "The results are: "
+		print("The results are: ")
 		for rec in data:
 			for field in rec:
-				print field
+				print(field)
 			print
 		print
 		myWait = raw_input("Press enter  to continue: ")
