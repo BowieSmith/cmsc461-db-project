@@ -21,8 +21,8 @@ try:
 		for rec in data:
 			for field in rec:
 				print(field)
-			print
-		print
+			print()
+		print()
 		myWait = raw_input("Press enter  to continue: ")
 		
 	con.commit()
