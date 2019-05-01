@@ -1,2 +1,10 @@
 agency_id,street_name,street_number,agency_city,agency_state,zip_code,phone_number
-1,"""Main St""","""382""","""Annapolis""","""MD""","""23201""","""301-123-4567"""
+MD0774,Wootton Pkwy,1101,Rockville,MD,20852,301-634-8482
+MD1015,Showalter Rd,18434,Hagerstown,MD,21742,301-393-3890
+MD1092,W Lombard St,110,Baltimore,MD,21202,410-752-5839
+CA0105,S Beacon St,839,Los Angeles,CA,90731,310-578-2840
+CA5149,O'brien Dr,1030,Menlo Park,CA,94025,650-293-1928
+CA6314,E Imperial Hwy,3230,Brea,CA,92821,714-958-3813
+TX2099,Freidrich Ln,4175,Austin,TX,78744,737-048-1093
+TX7024,S International Blvd,100,Progreso,TX,78589,956-820-3816
+MO2038,S Riverside Rd,700,St. Joseph,MO,64507,816-583-9472
