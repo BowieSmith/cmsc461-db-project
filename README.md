@@ -2,9 +2,11 @@
 
 ### How To
 `python3 setup.py` to build and load database
+
 `python3 soap_app.py` to run application
 
 Note:
+
 `setup.py` requires correctly formatted csv files in the dummy_data folder
 with the following names:
 - customer_agency.csv
@@ -33,7 +35,10 @@ with correct references, a script is used which pulls valid foreign references
 from the gsa_office and customer_agency csv files. To use the scripts, move to the
 following directory: `dummy_data/dummy_data_generators`
 and execute the following commands:
+
 `python3 generate_rental_agreements_csv.py <no_records> <filename>`
+
 `python3 generate_agency_rental_agreements_csv.py <no_records> <filename>`
+
 To use the new files, name them appropriately (as rental_agreements.csv
 or agency_rental_agreements.csv) and move to the dummy_data folder.
