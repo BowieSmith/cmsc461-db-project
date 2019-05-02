@@ -25,8 +25,8 @@ try:
 			print()
 			myWait = input("Press enter  to continue: ")
 		
-		con.commit()
-		con.close()
+	con.commit()
+	con.close()
 	
 except lite.Error as e:
 	print("Error%s:"%e.args[0])
