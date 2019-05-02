@@ -13,7 +13,7 @@ try:
 	while myStmt != "quit":
 		print(chr(27) + "[2J")
 		sys.stderr.write("\x1b[2J\x1b[H")
-		myStmt = raw_input("Enter SQL statement: ")
+		myStmt = input("Enter SQL statement: ")
 		if myStmt != "quit":
 			cur.execute(myStmt)
 			data = cur.fetchall()
@@ -23,7 +23,7 @@ try:
 				print(field)
 			print()
 		print()
-		myWait = raw_input("Press enter  to continue: ")
+		myWait = input("Press enter  to continue: ")
 		
 	con.commit()
 	con.close()
