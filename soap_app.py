@@ -20,6 +20,8 @@ print("""
            ___/ / /_/ / ___ |/ ____/ 
           /____/\____/_/  |_/_/      
 
+   System for Occupancy Agreement Processing
+
 """)
 
 input("          Press any key to continue")
