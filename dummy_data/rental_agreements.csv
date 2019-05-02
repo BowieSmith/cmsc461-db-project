@@ -1,2 +1,11 @@
 ra_id,office_name,rent_amount,end_month,end_day,end_year
-1,"""Test 1""",7000,5,31,2018
+R000294,NSA,25000,5,31,2020
+R392001,Maryland State House,17000,7,38,2022
+R029182,White House,85000,6,30,2019
+R001435,State Weed Dispensary,40000,11,13,2021
+R094032,Traffic Control Office,67000,1,1,2022
+R001234,Menlo Park County Court,23000,2,14,2020
+R000027,County Inspector General,19000,3,6,2019
+R000001,Austin Police,53000,8,31,2019
+R999999,Progreso Museum of Art,21000,10,4,2025
+R123456,Missouri State House,38000,12,1,2023
