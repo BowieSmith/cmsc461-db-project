@@ -36,28 +36,37 @@ try:
         clear_screen()
         myStmt = input("Enter SQL statement:\n")
         if myStmt != "quit":
-            try:
-                cur.execute(myStmt)
-                data = cur.fetchall()
-                print("\n\nResults:\n")
-                for col in cur.description:
-                    print(f'{col[0]:{field_width}.{field_width}}', end=' ')
-                print()
-                for _ in cur.description:
-                    print('-' * (field_width - 1), end='  ')
-                print()
-                for rec in data:
-                    for field in rec:
-                        print(f'{str(field):{field_width}.{field_width}}', end=' ')
+            if myStmt.split()[0].lower() == 'select':
+                try:
+                    cur.execute(myStmt)
+                    data = cur.fetchall()
+                    print("\n\nResults:\n")
+                    for col in cur.description:
+                        print(f'{col[0]:{field_width}.{field_width}}', end=' ')
                     print()
-                print()
-            except Exception as e:
-                print('\nError: ',e)
-                print('\nUse "quit" to exit.')
+                    for _ in cur.description:
+                        print('-' * (field_width - 1), end='  ')
+                    print()
+                    for rec in data:
+                        for field in rec:
+                            print(f'{str(field):{field_width}.{field_width}}', end=' ')
+                        print()
+                    print()
+                except Exception as e:
+                    print('\nError: ',e)
+                    print('\nUse "quit" to exit.')
+            else:
+                try:
+                    cur.execute(myStmt)
+                    print(myStmt.split()[0], "succeeded")
+                except Exception as e:
+                    print('\nError: ',e)
+                    print('\nUse "quit" to exit.')
             input("\nPress any key to continue")
             
     con.commit()
     con.close()
+    print("Goodbye!")
         
 except lite.Error as e:
     print("Error%s:"%e.args[0])
