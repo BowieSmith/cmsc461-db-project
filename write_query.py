@@ -17,16 +17,16 @@ try:
 		if myStmt != "quit":
 			cur.execute(myStmt)
 			data = cur.fetchall()
-		print("The results are: ")
-		for rec in data:
-			for field in rec:
-				print(field)
+			print("The results are: ")
+			for rec in data:
+				for field in rec:
+					print(field)
+				print()
 			print()
-		print()
-		myWait = input("Press enter  to continue: ")
+			myWait = input("Press enter  to continue: ")
 		
-	con.commit()
-	con.close()
+		con.commit()
+		con.close()
 	
 except lite.Error as e:
 	print("Error%s:"%e.args[0])
