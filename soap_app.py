@@ -15,7 +15,7 @@ clear_screen()
 print("""
         
              _____ ____  ___    ____ 
-            / ___// __ \/   |  /  __\\
+            / ___// __ \/   |  / __ \\
             \__ \/ / / / /| | / /_/ /
            ___/ / /_/ / ___ |/ ____/ 
           /____/\____/_/  |_/_/      
@@ -36,7 +36,9 @@ try:
         clear_screen()
         myStmt = input("Enter SQL statement:\n")
         if myStmt != "quit":
-            if myStmt.split()[0].lower() == 'select':
+            if not myStmt:
+                print("You must enter SQL statment! Enter 'quit' to exit")
+            elif myStmt.split()[0].lower() == 'select':
                 try:
                     cur.execute(myStmt)
                     data = cur.fetchall()
